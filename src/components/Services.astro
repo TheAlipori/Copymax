@@ -1,0 +1,118 @@
+---
+import DashboardIcon from "../icons/DashboardIcon.astro";
+import PrinterIcon from "../icons/PrinterIcon.astro";
+import PeenIcon from "../icons/PeenIcon.astro";
+import PlanIcon from "../icons/PlanIcon.astro";
+---
+
+<div>
+  <div class="bg-[#1D70B7] flex rounded-full mt-40">
+    <DashboardIcon class="size-16 fill-white ml-4" />
+    <div>
+      <h1 class="text-2xl text-white">Explora</h1>
+
+      <h1 class="text-2xl text-white font-bold">
+        Nuestros diferentes servicios
+      </h1>
+    </div>
+  </div>
+</div>
+
+<div class="container mx-auto py-8">
+  <div class="flex flex-wrap -mx-4 justify-center">
+    <div class="w-4/5 md:w-1/4 px-4 mb-8 md:mb-0">
+      <!-- Card 1 -->
+      <div
+        class="bg-[#1D70B7] rounded-3xl shadow-lg overflow-hidden md:m-4 m-4 h-full transform transition-transform duration-300 hover:scale-105"
+      >
+        <!-- Card content -->
+        <div class="p-4 justify-items-center">
+          <!-- Card details -->
+
+          <div class="flex justify-center">
+            <PrinterIcon
+              class="size-36 text-white object-center flex justify-center"
+            />
+          </div>
+          <h2 class="text-lg font-bold mb-2 text-white text-center">
+            SERVICIOS DE COPISTERIA EN GENERAL
+          </h2>
+          <p class="text-white text-justify font-bold">
+            Desde la impresión de documentos importantes hasta el escaneo y
+            envío, ofrecemos soluciones completas para tus necesidades de
+            copistería.
+          </p>
+          <div class="flex justify-center pt-8">
+            <a
+              href="/productsPage"
+              class="text-[#1D70B7] bg-white text-xl rounded-full p-3 px-10 font-bold"
+              >Ver mas</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w-4/5 md:w-1/4 px-4 mb-8 md:mb-0">
+      <!-- Card 2 -->
+      <div
+        class="bg-[#BD1622] rounded-3xl shadow-md overflow-hidden m-4 h-full transform transition-transform duration-300 hover:scale-105"
+      >
+        <!-- Card content -->
+        <div class="flex justify-center">
+          <PeenIcon
+            class="size-36 text-white object-center flex justify-center"
+          />
+        </div>
+        <div class="p-4">
+          <!-- Card details -->
+          <h2 class="text-lg font-bold mb-2 text-white text-center">DISEÑOS</h2>
+          <p class="text-white font-bold text-justify">
+            Nuestros diseñadores gráficos crean materiales visuales impactantes
+            que destacan tu marca y mensaje, asegurando una presentación
+            profesional
+          </p>
+          <div class="flex justify-center pt-8 mt-6">
+            <a
+              href="/productsPage"
+              class="text-[#BD1622] bg-white text-xl rounded-full p-3 px-10 font-bold"
+              >Ver mas</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w-4/5 md:w-1/4 px-4 mb-8 md:mb-0">
+      <!-- Card 3 -->
+      <div
+        class="bg-[#F8B133] rounded-3xl shadow-md overflow-hidden m-4 h-full mb-0 transform transition-transform duration-300 hover:scale-105"
+      >
+        <!-- Card content -->
+        <div class="flex justify-center">
+          <PlanIcon
+            class="size-32 fill-white object-center flex justify-center mt-3"
+          />
+        </div>
+        <div class="p-4">
+          <!-- Card details -->
+          <h2 class="text-lg font-bold mb-2 text-white text-center">
+            PLOTEO DE PLANOS
+          </h2>
+          <p class="text-white font-bold text-justify">
+            Especializados en la impresión precisa de planos arquitectónicos e
+            ingenieriles, proporcionamos soluciones detalladas y de alta calidad
+            para proyectos técnicos.
+          </p>
+          <div class="flex justify-center pt-8 mt-7">
+            <a
+              href="/productsPage"
+              class="text-[#F8B133] bg-white text-xl rounded-full p-3 px-10 font-bold"
+              >Ver mas</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

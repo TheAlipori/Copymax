@@ -1,0 +1,50 @@
+<nav class="py-6 relative">
+  <div class="container flex mx-auto px-8 xl:px-0 items-center justify-center">
+    <div class="flex flex-grow">
+      <img src="/favicon.svg" class="size-16" />
+      <span class="text-4xl py-4 pl-4 font-bold">Copy</span>
+      <span class="text-4xl py-4 font-bold text-[#1D70B7]">m</span>
+      <span class="text-4xl py-4 font-bold text-[#BD1622]">a</span>
+      <span class="text-4xl py-4 font-bold text-[#F8B133]">x</span>
+    </div>
+    <div class="self-center lg:hidden">
+      <img src="/menu6.svg" id="menuButton" />
+    </div>
+
+    <div
+      id="menu"
+      class="lg:flex hidden flex-grow justify-between self-center absolute top-28 lg:relative lg:top-0 left-0 w-full lg:w-auto items-center py-14 px-8 lg:py-0 bg-white"
+    >
+      <div class="flex flex-col lg:flex-row mb-8 lg:mb-0">
+        <a href="/" class="py-4 px-4 font-semibold lg:mr-7 mb-8 lg:mb-0 text-xl"
+          >Inicio</a
+        >
+        <a
+          href="#section1"
+          class="py-4 px-4 font-semibold lg:mr-7 mb-8 lg:mb-0 text-xl"
+          >Sobre Nosotros</a
+        >
+        <a
+          href="/productsPage"
+          class="py-4 px-4 font-semibold lg:mr-7 mb-8 lg:mb-0 text-xl"
+          >Servicios</a
+        >
+      </div>
+    </div>
+  </div>
+</nav>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    document
+      .getElementById("menuButton")
+      .addEventListener("click", function () {
+        let menu = document.getElementById("menu");
+        if (menu.classList.contains("hidden")) {
+          menu.classList.remove("hidden");
+        } else {
+          menu.classList.add("hidden");
+        }
+      });
+  });
+</script>

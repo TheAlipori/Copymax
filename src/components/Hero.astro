@@ -1,0 +1,31 @@
+---
+import HeroImage from "../icons/HeroImage.astro";
+import DocumentIcon from "../icons/DocumentIcon.astro";
+import ArrowIcon from "../icons/ArrowIcon.astro";
+---
+
+<section
+  class="font-quicksand wrapper grid gap-8 justify-items-center items-centers pb-12 md:grid-cols-2 md:py-24"
+>
+  <HeroImage class="w-full max-w-xs md:order-1" />
+  <article class="hero__text text-center space-y-6 md:text-left md:space-y-8">
+    <h1 class="text-5xl font-bold md:text-6xl md:pt-28">
+      Tu Visión <br />
+      Nuestra impresión
+    </h1>
+    <p class="text-2xl">
+      Centro de impresión y diseño grafico: donde la creatividad cobra vida.
+    </p>
+    <a
+      href="https://wa.me/526183006203"
+      class="inline-flex p-4 bg-red-700 text-white text-3xl font-bold rounded-full"
+      ><DocumentIcon class="size-10 mr-3" />
+      Envianos tu documento</a
+    >
+    <p
+      class="pl-36 font-bold text-center inline-flex items-center place-items-center"
+    >
+      o conócenos un poco mejor <ArrowIcon class="size-10 ml-3" />
+    </p>
+  </article>
+</section>
