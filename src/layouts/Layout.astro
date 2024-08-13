@@ -43,7 +43,7 @@ const { title } = Astro.props;
 
 <style is:global>
   :root {
-    color-scheme: light dark;
+    color-scheme: light;
   }
   html {
     font-family: "Quicksand Variable", sans-serif;
@@ -51,11 +51,5 @@ const { title } = Astro.props;
   }
   body {
     background-color: #ffffff; /* Mantén el fondo blanco también en el body */
-  }
-  @media (prefers-color-scheme: dark) {
-    html,
-    body {
-      background-color: #ffffff; /* Mantiene el fondo blanco en modo oscuro */
-    }
   }
 </style>
