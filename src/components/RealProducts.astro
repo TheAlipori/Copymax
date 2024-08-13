@@ -1,1 +1,42 @@
-<section></section>
+---
+import Sticker from "/sticker_hero.svg";
+---
+
+<section>
+  <div
+    class="container flex flex-col-reverse lg:flex-row items-center justify-center mx-auto mt-10 md:px-12"
+  >
+    <!-- En pantallas pequeñas (por defecto), el diseño es en columna y la imagen está debajo del texto -->
+    <!-- En pantallas medianas y grandes (a partir de md), el diseño cambia a fila con el texto a la izquierda y la imagen a la derecha -->
+    <div class="mb-14 lg:mb-0 lg:w-1/2 text-center lg:text-left">
+      <!-- El texto está centrado en pantallas pequeñas y a la izquierda en pantallas grandes -->
+      <h1
+        class="max-w-xl text-[2.9rem] leading-none font-bold mb-5 lg:text-6xl lg:leading-tight"
+      >
+        Pegamos Tu visión en Cada Sticker
+      </h1>
+      <p class="max-w-xl md:text-2xl text-gray-500 lg:max-w-md">
+        Dale vida a tus ideas con stickers personalizados que hablan de ti.
+        Crea, diseña y decora con tu estilo único.
+      </p>
+      <div class="flex justify-center lg:justify-start mt-14">
+        <!-- Botón centrado en pantallas pequeñas y alineado a la izquierda en pantallas grandes -->
+        <button
+          type="button"
+          class="text-white bg-red-700 font-medium rounded-full px-5 py-4 text-center md:text-3xl hover:bg-red-800 hover:drop-shadow-md transition duration-300 ease-in-out"
+        >
+          Leer más
+        </button>
+      </div>
+    </div>
+    <!-- Imagen colocada a la derecha en pantallas grandes, centrada en pantallas pequeñas -->
+    <div class="lg:w-1/2 flex justify-center">
+      <!-- Imagen con ancho completo en pantallas pequeñas, máximo de tamaño en pantallas grandes -->
+      <img
+        class="w-full max-w-xs lg:max-w-full"
+        src="/sticker_hero.svg"
+        alt="Sticker Hero"
+      />
+    </div>
+  </div>
+</section>

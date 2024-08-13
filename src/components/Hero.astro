@@ -7,8 +7,16 @@ import ArrowIcon from "../icons/ArrowIcon.astro";
 <section
   class="font-quicksand wrapper grid gap-8 justify-items-center items-centers pb-12 md:grid-cols-2 md:py-24"
 >
-  <HeroImage class="size-96 sm:size-full max-w-xs md:order-1" />
-  <article class="hero__text text-center space-y-6 md:text-left md:space-y-8">
+  <HeroImage
+    class="size-96 sm:size-full max-w-xs md:order-1"
+    data-aos="zoom-in"
+    data-aos-duration="2000"
+  />
+  <article
+    class="hero__text text-center space-y-6 md:text-left md:space-y-8"
+    data-aos="fade-up"
+    data-aos-duration="2000"
+  >
     <h1 class="text-4xl sm:text-5xl font-bold md:text-6xl md:pt-28">
       Tu Visión es nuestra <div class="mt-4">
         <span class="bg-red-700 px-5 rounded-full text text-white"
@@ -20,15 +28,19 @@ import ArrowIcon from "../icons/ArrowIcon.astro";
       Centro de impresión y diseño grafico: donde la creatividad cobra vida.
     </p>
     <a
+      data-aos="fade-right"
+      data-aos-duration="2000"
       href="https://wa.me/526183006203"
-      class="inline-flex p-2 sm:p-4 bg-red-700 text-white text-2xl sm:text-3xl font-bold rounded-full items-center"
+      class="inline-flex p-2 sm:p-4 bg-red-700 text-white text-2xl sm:text-3xl font-bold rounded-full items-center hover:bg-red-800 hover:drop-shadow-md transition duration-300 ease-in-out"
       ><DocumentIcon class="size-16 ml-4 sm:mr-3" />
       Envianos tu documento</a
     >
     <p
       class="pl-36 font-bold text-center inline-flex items-center place-items-center"
     >
-      o conócenos un poco mejor <ArrowIcon class="size-10 ml-3" />
+      o conócenos un poco mejor <ArrowIcon
+        class="animate-bounce size-10 ml-3"
+      />
     </p>
   </article>
 </section>
